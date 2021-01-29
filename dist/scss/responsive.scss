@@ -1,0 +1,202 @@
+@import './base';
+
+@include media-sm {
+    .navbar-lg {
+        visibility: hidden;
+    }
+
+    .shorten-link__lg1 {
+        visibility: hidden;
+    }
+
+    .shorten-link__lg2 {
+        visibility: hidden;
+    }
+
+}
+
+@include media-md {
+    header {
+        overflow: hidden;
+        padding-left: 60px;
+        padding-right: 60px;
+        height: 6rem;
+    }
+
+    .hamburger-btn {
+        visibility: hidden;
+    }
+
+    
+
+    .home__bg {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3em;
+        margin-top: 3em;
+
+        img {
+            margin: 0 auto;
+            width: 35rem;
+        }
+    }
+
+    .navbar-lg {
+        margin-top: -2.2em;
+        margin-left: 10em;
+
+        &__link {
+            font-size: 15px;
+            color: $secondary-text__color;
+            font-weight: bold;
+            margin: 0 .7em;
+        }
+    }
+
+    .navbar-lg__2 {
+        float: right;
+        margin-top: -2.1em;
+        // margin-left: 15rem;
+
+        a {
+            font-size: 15px;
+            color: $secondary-text__color;
+            font-weight: bold;
+        }
+
+        button {
+            color: $main-bg;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: $btn-color;
+            border-radius: 28px;
+            padding: .7em 2em;
+            border: none;
+            outline: none;
+            font-family: $font-stack;
+            margin-left: 2.5em;
+        }
+    }
+}
+
+@include media-lg {
+    header {
+        padding: 48px 165px 0 167px;
+        height: 6rem;
+        
+        .hamburger-btn {
+            visibility: hidden;
+        }
+
+        .navbar-lg {
+            margin-top: -2.2em;
+            margin-left: 10em;
+    
+            &__link {
+                font-size: 15px;
+                color: $secondary-text__color;
+                font-weight: bold;
+                margin: 0 .7em;
+            }
+        }
+    
+        .navbar-lg__2 {
+            float: right;
+            margin-top: -2.1em;
+            // margin-left: 15rem;
+    
+            a {
+                font-size: 15px;
+                color: $secondary-text__color;
+                font-weight: bold;
+            }
+    
+            button {
+                width: 105px;
+                height: 40px;
+                color: $main-bg;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: $btn-color;
+                border-radius: 28px;
+                border: none;
+                outline: none;
+                font-family: $font-stack;
+                margin-left: 2.5em;
+            }
+        }
+    }
+
+    .home__bg {
+        margin: 2.5em -9em 0 0;
+        float: right;
+        padding-bottom: 15em;
+
+        img {
+            width: 733px;
+            height: 482px;
+        }
+    }
+
+    .home__text-intro {
+        margin-top: 6.6em;
+        width: 580px;
+        text-align: left;
+        margin-left: 10.4em;
+
+        h1 {
+            font-size: 80px;
+            line-height: 90px;
+            letter-spacing: -2px;
+            padding-bottom: 0;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 36px;
+            letter-spacing: -0.15px;
+        }
+
+        a {
+            margin: 0;
+        }
+    }
+
+    .shorten-link {
+        min-width: 1110px;
+        max-height: 168px;
+
+        &__bg {
+            display: none;
+        }
+
+        &__lg1 {
+            transform: translateY(-11.3rem) translateX(40rem);
+            width: 715.16px;
+            height: 409.91px;
+            position: absolute;
+        }
+
+        &__lg2 {
+            transform: translateX(-10rem) translateY(2rem);
+        }
+    }
+
+    .shorten-link-overlap {
+        min-width: 1110px;
+        max-height: 168px;
+        flex-direction: row;
+        
+        &__input { 
+            min-width: 769px;
+            min-height: 64px;
+            font-size: 20px;
+            padding-left: 32px;       
+        }
+
+        &__btn {
+            
+        }
+    }
+}

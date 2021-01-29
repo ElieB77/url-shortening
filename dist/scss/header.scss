@@ -1,0 +1,101 @@
+@import './base';
+
+header {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: $main-bg;
+    padding: 40px 24px 0 24px;
+    height: 5rem;
+
+    .header__mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            width: 120.04px;
+            z-index: 10;
+        }
+
+        .hamburger-btn {
+            width: 24px;
+            height: 21px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            float: right;
+            margin-top: -.5em;
+    
+            &__line1 {
+                width: 24px;
+                height: 3px;
+                background-color: $secondary-text__color;
+            }
+    
+            &__line2 {
+                width: 24px;
+                height: 2.5px;
+                background-color: $secondary-text__color;
+            }
+    
+            &__line3 {
+                width: 24px;
+                height: 3px;
+                background-color: $secondary-text__color;
+            }
+        }
+    }
+
+    .navbar-mobile__modal {
+        perspective: 500rem;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($main-bg, 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        display:flex;
+        justify-content: center;
+
+        .navbar-mobile {
+            perspective: 500rem;
+            z-index: 100;
+            display: block;
+            width: 327px;
+            height: 383px;
+            border-radius: 10px;
+            padding: 40px 24px;
+            background-color: $main-elem__bg;
+            position: fixed;
+            margin-top: 5.7em;
+            transform: translateY(-100vh) translateX(100vw);
+            opacity: 0;
+            @include transition-ease;
+             
+            ul {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: space-between;
+            }
+    
+            hr {
+                background-color: rgba($secondary-text__color, .2);
+                height: 1px;
+                width: 279px;
+                border: none;
+            }
+    
+            #sign-up__btn {
+                border-radius: 28px;
+                background-color: $btn-color;
+                padding: .6em 0;
+            }
+        }
+    
+    }
+}

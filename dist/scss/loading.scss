@@ -1,0 +1,33 @@
+@import './base';
+
+.loading-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($main-bg, 0);
+    perspective: 1000rem;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    &__spinner {
+            pointer-events: none;
+            width: 4em;
+            height: 4em;
+            border: .6em solid transparent;
+            border-color: $main-text__color;
+            border-top-color: $btn-color;
+            border-radius: 50%;
+            animation: loadingspin 1s linear infinite;
+    }
+
+    @keyframes loadingspin {
+        100% {
+                transform: rotate(360deg)
+        }
+    }
+}

@@ -1,0 +1,127 @@
+header {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: white;
+  padding: 40px 24px 0 24px;
+  height: 5rem;
+}
+
+header .header__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__mobile .logo {
+  width: 120.04px;
+  z-index: 10;
+}
+
+header .header__mobile .hamburger-btn {
+  width: 24px;
+  height: 21px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  float: right;
+  margin-top: -.5em;
+}
+
+header .header__mobile .hamburger-btn__line1 {
+  width: 24px;
+  height: 3px;
+  background-color: #9e9aa8;
+}
+
+header .header__mobile .hamburger-btn__line2 {
+  width: 24px;
+  height: 2.5px;
+  background-color: #9e9aa8;
+}
+
+header .header__mobile .hamburger-btn__line3 {
+  width: 24px;
+  height: 3px;
+  background-color: #9e9aa8;
+}
+
+header .navbar-mobile__modal {
+  -webkit-perspective: 500rem;
+          perspective: 500rem;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .navbar-mobile__modal .navbar-mobile {
+  -webkit-perspective: 500rem;
+          perspective: 500rem;
+  z-index: 100;
+  display: block;
+  width: 327px;
+  height: 383px;
+  border-radius: 10px;
+  padding: 40px 24px;
+  background-color: #3a3054;
+  position: fixed;
+  margin-top: 5.7em;
+  -webkit-transform: translateY(-100vh) translateX(100vw);
+          transform: translateY(-100vh) translateX(100vw);
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+header .navbar-mobile__modal .navbar-mobile ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navbar-mobile__modal .navbar-mobile hr {
+  background-color: rgba(158, 154, 168, 0.2);
+  height: 1px;
+  width: 279px;
+  border: none;
+}
+
+header .navbar-mobile__modal .navbar-mobile #sign-up__btn {
+  border-radius: 28px;
+  background-color: #2bd0d0;
+  padding: .6em 0;
+}
+/*# sourceMappingURL=header.css.map */
