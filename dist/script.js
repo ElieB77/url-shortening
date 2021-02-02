@@ -52,9 +52,6 @@ function checkInput() {
         errorMessage.style.display = 'block';
         linkInput.style.border = 'solid 3px rgb(244, 99, 99)';
         linkInput.classList.add('error');
-        submitBtn.style.marginTop = '0';
-        cardLinkBg.style.height= '182px';
-        cardLink.style.height = '182px';
     }else{
         loading.style.display ='flex';
         fetch(`https://api.shrtco.de/v2/shorten?url=${inputValue}`)
@@ -69,9 +66,6 @@ function checkInput() {
             errorMessage.style.display = 'none';
             linkInput.style.border = 'none';
             linkInput.classList.remove('error');
-            submitBtn.style.marginTop = '3.5em';
-            cardLinkBg.style.height= '160px';
-            cardLink.style.height = '160px';
             loading.style.display = 'none';
             resultContainer.style.display = 'flex';
 

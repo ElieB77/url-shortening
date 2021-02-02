@@ -66,6 +66,8 @@
     font-size: 15px;
     color: $footer-text__color;
     margin-bottom: 10px;
+    cursor: pointer;
+    @include transition-ease;
 }
 
 .error-message {
@@ -73,8 +75,9 @@
     font-style: italic;
     font-size: 12px;
     position: relative;
-    margin-top: 4.3em;
-    padding-bottom: 1.4em;
+    margin-left: -11rem;
+    padding: .5em 0;
+    overflow: hidden;
     display: none;
 }
 
@@ -110,6 +113,7 @@
     justify-content: center;
     margin: 0 auto;
     font-weight: bold;
+    @include transition-ease;
 }
 
 ul {

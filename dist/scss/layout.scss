@@ -28,83 +28,81 @@
 }
 
 .shorten-link-container {
+    height: 160px;
+    // overflow: hidden;
     display: flex;
     justify-content: center;
-    position: absolute;
-    z-index: 20;
-    margin-top: -5em;
-    left: 50%;
-    transform: translate(-50%);
-    overflow: hidden;
+    margin-top: -4.9em;
+    z-index: 500;
+    position: relative;
     
 
     .shorten-link {
         width: 327px;
         height: 160px;
-        border-radius: 10px;
         background-color: $main-elem__bg;
+        border-radius: 10px;
         overflow: hidden;
         position: absolute;
     
         &__bg {
-            width: 900px;
-            padding-left: 5em;
-            transform: translateY(-7.5em);
-            position: relative;
+            transform: translateX(5.5rem) translateY(-5.5rem);
+            width: 715.16;
+            height: 409.91;
+
         }
     }
 
     .shorten-link-overlap {
+        position: absolute;
         width: 327px;
         height: 160px;
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 24px;
-        overflow: hidden;
-            
-    
-        &__input {
-            width: 279px;
-            height: 48px;
-            position: absolute;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            font-family: $font-stack;
-            font-size: 16px;
-            color: $secondary-text__color;
-            padding: 0 16px;
 
-            &__input:url {
-                background-color: pink;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 327px;
+            height: 160px;
+            padding: 24px 0;
+
+            input {
+                width: 279px;
+                height: 48px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                font-family: $font-stack;
+                font-size: 16px;
+                padding-left: 16px;
+                color: $secondary-text__color;
             }
-        }
-
-        ::placeholder {
-            color: $secondary-text__color;
-        }
-
-        .error::placeholder {
-            color: rgba($error-color, .5);
-        }
     
-        &__btn {
-            position: absolute;
-            width: 279px;
-            height: 48px;
-            border-radius: 5px;
-            background-color: $btn-color;
-            color: $main-bg;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: $font-stack;
-            padding: .5em;
-            margin-top: 3.5em;
-            border: none;
-            outline: none;
-            cursor: pointer;
+            ::placeholder {
+                color: $secondary-text__color;
+            }
+    
+            .error::placeholder {
+                color: rgba($error-color, .5);
+            }
+        
+            button {
+                width: 279px;
+                height: 48px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                font-family: $font-stack;
+                background-color: $btn-color;
+                font-size: 18px;
+                color: $main-bg;
+                font-weight: bold;
+                cursor: pointer;
+                @include transition-ease;
+            }
+
         }
     }
 }
@@ -124,7 +122,10 @@
 .features {
     background-color: $secondary-bg;
     position: relative;
-    z-index: 1;
+    z-index: 0;
+    margin-top: -5em;
+    
+    
 
     &__text {
         padding-top: 155px;
@@ -185,6 +186,11 @@
                 margin-top: 1em ;
                 cursor: pointer;
                 display: block;
+                @include transition-ease;
+
+                &:hover, &:active {
+                    background-color: rgb(154, 227, 227);
+                }
             }
         }
     }
@@ -275,6 +281,7 @@
             border: none;
             outline: none;
             cursor: pointer;
+            @include transition-ease;
         }
     }
 }
@@ -311,6 +318,8 @@
 
         img {
             width: 24px;
+            cursor: pointer;
+            @include transition-ease;
         }
     }
 }
