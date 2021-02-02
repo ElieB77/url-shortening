@@ -1,4 +1,4 @@
-// Navbar
+// Nav
 const hamburger = document.querySelector('.hamburger-btn');
 const navMenu = document.querySelector('.navbar-mobile');
 const navMenuModal = document.querySelector('.navbar-mobile__modal');
