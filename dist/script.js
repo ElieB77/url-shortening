@@ -1,3 +1,4 @@
+alert ('hello');
 // Nav
 const hamburger = document.querySelector('.hamburger-btn');
 const navMenu = document.querySelector('.navbar-mobile');
