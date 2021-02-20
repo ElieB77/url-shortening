@@ -16,4 +16,4 @@ Copy the shortened link to their clipboard in a single click<br>
 Receive an error message when the form is submitted if:<br>
 The input field is empty<br>
 
-[Frontend Mentor](https://www.frontendmentor.io/challenges) coded by [Elie Bissor](https://www.eliewd.com)
+[Frontend Mentor Challenge](https://www.frontendmentor.io/challenges) coded by [Elie Bissor](https://www.eliewd.com)
