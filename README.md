@@ -1,7 +1,2 @@
-# URL shortening
-
-Responsive Single Page website<br>
-Shorten your URL<br>
-Made with SCSS and JavaScript<br><br>
-Challenge by [Frontend Mentor](https://www.frontendmentor.io) coded by ElieB77
-
+<h1 align="center">Frontend Mentor Challenge | URL shortening API</h1>
+<p align="center"><strong>SASS / Vanilla JavaScript</strong></p>
